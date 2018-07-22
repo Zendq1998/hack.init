@@ -1,0 +1,50 @@
+<view>
+  <view class='header'>
+    <wxc-flex class='group-info' dir='top' main='center' cross='center'>
+      <image class='avatar' src='{{groupImg}}'></image>
+      <text class='group-name'>{{groupName}}</text>
+    </wxc-flex>
+  </view>
+  <view class='group-member'>
+    <view class='group-member-container'>
+      <wxc-flex class dir='top' main='center'>
+        <wxc-flex dir='left' main='between'>
+          <view>
+            <image class='group-member-icon' src='../../../img/icon/group_icon_in_detail.png'></image>
+            <text class='group-member-title'>群成员</text>
+          </view>
+          <view class='invite'>
+            <button type='primary' size='mini' class='invite-bt' plain='true' open-type='share'>邀请成员</button>
+          </view>
+        </wxc-flex>
+
+        <wxc-flex class='group-member-list' dir='left'>
+          <view wx:for='{{memberList}}' wx:key='{{index}}' class='group-member-item'>
+            <wxc-flex dir='top' main='between' cross='center'>
+              <image class='bill-class-icon' src='{{item.headimage}}'></image>
+              <text class='bill-class-text'>{{item.username}}</text>
+            </wxc-flex>
+          </view>
+        </wxc-flex>
+      </wxc-flex>
+    </view>
+  </view>
+  <view class='bill-list'>
+    <wxc-flex dir='left' main='between'>
+      <wxc-steps class='step' steps="{{billList}}" current="{{billList.length - 1}}">
+      </wxc-steps>
+      <wxc-flex class='bill-list-content' dir='top'>
+        <wxc-flex wx:for="{{billList}}" wx:key="{{index}}" class='bill-item' dir='left' main='between' cross='center'>
+          <wxc-flex dir='left'>
+            <image class='bill-class-icon who-pay-img' src='{{item.customerimage}}'></image>
+            <wxc-flex class='bill-name' dir='top' main='between'>
+              <text class='why-pay-text'>{{item.ps}}</text>
+              <text class='who-pay-text'>{{item.customer_name}}</text>
+            </wxc-flex>
+          </wxc-flex>
+          <text class='bill-num'>{{item.price}}</text>
+        </wxc-flex>
+      </wxc-flex>
+    </wxc-flex>
+  </view>
+</view>

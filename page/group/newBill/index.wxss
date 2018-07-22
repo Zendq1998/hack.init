@@ -1,0 +1,79 @@
+/* page/group/newBill/index.wxss */
+.container {
+  width: 680rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  border-radius: 10rpx 10rpx 0 0;
+}
+.bill-content {
+  width: 620rpx;
+  margin: 0 auto;
+}
+.bill-title {
+  color: #a4a4a4;
+  font-size: 32rpx;
+  margin-top: 90rpx;
+}
+.virtual-input {
+  text-align: center;
+  line-height: 85rpx;
+  height: 90rpx;
+  font-size: 90rpx;
+  color: #5ec4f7;
+}
+.bill-num {
+  margin-top: 30rpx;
+  font-size: 90rpx;
+  color: #5ec4f7;
+}
+.bill-detail {
+  width: 100%;
+}
+.bill-detail {
+  margin-top: 40rpx;
+}
+.bill-detail-item {
+  width: 100%;
+  height: 100rpx;
+  border-top: 1rpx solid #ededed;
+}
+.container-bottom {
+  margin: 0 auto;
+  display: block;
+  width: 680rpx;
+  height: 40rpx;
+}
+.bill-class {
+  width: 25%;
+}
+.bill-class-container {
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+.bill-class-icon {
+  width: 85rpx;
+  height: 85rpx;
+}
+.bill-class-text {
+  font-size: 23rpx;
+  margin-top: 10rpx;
+  color: #a4a4a4;
+}
+.bill-class-text-choosed {
+  color: #5ec4f7;
+}
+.done {
+  width: 100%;
+  margin-top: 40rpx;
+}
+.done-bt {
+  width: 500rpx;
+  margin: 0 auto;
+  background-color: #5ec4f7;
+  color: #ffffff;
+  border-radius: 30rpx;
+}
+button::after{
+  border: none;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wxc-flex": "/dist/packages/@minui/wxc-flex/dist/index",
+    "wxc-cc": "/dist/packages/@minui/wxc-cc/dist/index"
+  },
+  "navigationBarTitleText": "创建群"
+}

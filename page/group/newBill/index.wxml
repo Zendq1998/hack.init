@@ -1,0 +1,45 @@
+<view class='page'>
+   <view class='container'>
+    <view class='bill-content'>
+      <wxc-flex dir='top' cross='center'>
+        <text class='bill-title'>金额（元）</text>
+        <input class='virtual-input' bindinput='inputBill' type='digit' value='{{billNum}}' placeholder='0.00'>
+        </input>
+        <!-- <text class='bill-num'></text> -->
+        <view class='bill-detail'>
+          <wxc-input title='来自' disabled="true" mode='normal' right='true' value='{{payer}}' catchtap='inputPayer' placeholder='群'>
+          </wxc-input>
+          <action-sheet hidden="{{myGroupHidden}}" bindchange="relationSheetChange">
+      <block wx:for-items="{{myGroup}}" wx:key="{{item.id}}">
+        <action-sheet-item class="item" data-value="{{item}}" catchtap="chooseGroup">{{item.chatname}}</action-sheet-item>
+      </block>
+      <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+    </action-sheet>
+          <picker class='info-input' mode="date" bindchange="birthPick">
+            <wxc-input title='时间' disabled="true" mode='normal' right='true' value='{{date}}' placeholder='日期'>
+            </wxc-input>
+          </picker>       
+          <wxc-input title='活动' mode='normal' right='true' value='{{active}}' bindinput='inputActive' placeholder='描述'>
+          </wxc-input>
+        </view>
+      </wxc-flex>
+    </view>
+    <wxc-flex dir='left' cross='center' wrap="wrap">
+      <view wx:for='{{classDetail}}' wx:key="{{index}}" class='bill-class' data-index='{{index}}' catchtap='chooseClass'>
+        <view class='bill-class-container'>
+          <wxc-flex dir='top' cross='center'>
+            <image class='bill-class-icon' src='{{item.url[classChoose[index]]}}'></image>
+            <text hidden="{{classChoose[index]}}" class='bill-class-text'>{{item.dis}}</text>
+            <text hidden="{{!classChoose[index]}}" class='bill-class-text bill-class-text-choosed'>{{item.dis}}</text>
+          </wxc-flex>
+        </view>
+      </view>
+    </wxc-flex>
+    
+    
+  </view>
+  <image class='container-bottom' src='../../../img/teeth.png'></image>
+  <view class='done'>
+    <button catchtap='newBill' class='done-bt'>完成编辑</button>
+  </view>
+</view>

@@ -1,0 +1,37 @@
+/* page/index/index.wxss */
+.container {
+  width: 680rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.group-item {
+  width: 320rpx;
+  height: 443rpx;
+  background: #ffffff;
+  border-radius: 40rpx;
+  margin-bottom: 30rpx;
+  box-shadow:6rpx 6rpx 6rpx 6rpx #eeeeee;
+}
+.group-item-plus {
+  width: 111rpx;
+  height: 111rpx;
+}
+.bill-img {
+  width: 107rpx;
+  height: 107rpx;
+  border-radius: 100%;
+  margin-top: 80rpx;
+}
+.bill-ps {
+  font-size: 25rpx;
+  margin-top: 30rpx;
+}
+.bill-price {
+  font-size: 45rpx;
+  color: #86d3f9;
+  margin-top: 30rpx;
+}
+.bill-time {
+  font-size: 24rpx;
+  margin-top: 30rpx;
+}

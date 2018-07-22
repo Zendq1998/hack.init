@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "wxc-flex": "/dist/packages/@minui/wxc-flex/dist/index",
+    "wxc-input": "/dist/packages/@minui/wxc-input/dist/index",
+    "wxc-button": "/dist/packages/@minui/wxc-button/dist/index"
+  },
+  "navigationBarTitleText": "新建账单",
+  "enablePullDownRefresh": true
+}

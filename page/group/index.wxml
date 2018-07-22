@@ -1,0 +1,16 @@
+<!--page/group/index.wxml-->
+<view class='container'>
+  <wxc-flex dir='left' main='between' wrap="wrap">
+    <view class='group-item' catchtap='toNewGroup'>
+      <wxc-cc>
+        <image class='group-item-plus' src='../../img/icon/plus.png'></image>
+      </wxc-cc>
+    </view>
+    <view class='group-item' data-id="{{item.id}}" wx:for="{{myGroup}}" wx:key="{{index}}" catchtap='toGroupDetail'>
+      <wxc-flex dir='top' cross='center'>
+        <image src='{{item.chatimage}}' class='group-img'></image>
+        <text class='group-name'>{{item.chatname}}</text>
+      </wxc-flex>
+    </view>
+  </wxc-flex>
+</view>

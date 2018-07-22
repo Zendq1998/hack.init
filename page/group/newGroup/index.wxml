@@ -1,0 +1,17 @@
+<!-- <image wx:if="{{HeadImgChosed[0]}}" class='avatar' data-src='{{HeadImgChosed}}' src='{{HeadImgChosed}}' bindtap="previewImage"></image>
+<image wx:if="{{!HeadImgChosed[0]}}" class='avatar' src='/image/index/plus.png' bindtap="chooseImage"></image> -->
+<!-- <text class='avatar-tip' bindtap="chooseImage">选择群头像</text> -->
+<view class='container'>
+  <wxc-flex dir='top' cross='center'>
+    <image class='avatar' src='{{tempImg[0]}}' catchtap='previewImage'></image>
+      <text class='group-img-text' catchtap="chooseImage">选择头像</text>
+      <view class='group-name'>
+        <wxc-flex dir='left' main='center'>
+          <input placeholder="群名称" placeholder-class="center" value='{{groupName}}' bindinput='inputGroupName'></input>
+        </wxc-flex>
+      </view>
+  </wxc-flex>
+</view>
+<view class='done'>
+  <button catchtap='newGroup' class='done-bt'>创建群</button>
+</view>

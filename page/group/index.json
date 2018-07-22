@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "wxc-flex": "/dist/packages/@minui/wxc-flex/dist/index",
+    "wxc-input": "/dist/packages/@minui/wxc-input/dist/index",
+    "wxc-button": "/dist/packages/@minui/wxc-button/dist/index",
+    "wxc-cc": "/dist/packages/@minui/wxc-cc/dist/index"
+  },
+  "navigationBarTitleText": "我的群",
+  "enablePullDownRefresh": true
+}

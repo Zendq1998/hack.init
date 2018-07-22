@@ -1,0 +1,29 @@
+/* page/group/index.wxss */
+.container {
+  width: 680rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.group-item {
+  width: 320rpx;
+  height: 443rpx;
+  background: #ffffff;
+  border-radius: 40rpx;
+  margin-bottom: 30rpx;
+  box-shadow:6rpx 6rpx 6rpx 6rpx #eeeeee;
+}
+.group-item-plus {
+  width: 111rpx;
+  height: 111rpx;
+}
+.group-img {
+  width: 107rpx;
+  height: 107rpx;
+  border-radius: 100%;
+  margin-top: 100rpx;
+}
+.group-name {
+  font-size: 32rpx;
+  font-weight: bolder;
+  margin-top: 20rpx;
+}

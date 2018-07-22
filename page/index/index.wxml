@@ -1,0 +1,23 @@
+<!-- <wxc-mask status="{{maskStatus}}" background-color="#ffffff" opacity="1"></wxc-mask> -->
+<!--page/group/index.wxml-->
+<view class='container'>
+  <wxc-flex dir='left' main='between' wrap="wrap">
+    <view class='group-item' catchtap='toNewBill'>
+      <wxc-cc>
+        <image class='group-item-plus' src='../../img/icon/plus.png'></image>
+      </wxc-cc>
+    </view>
+    <view class='group-item' wx:for="{{myBillList}}" wx:key="{{index}}">
+      <wxc-flex dir='top' cross='center'>
+        <image src='{{classDetail[item.myclass].url[1]}}' class='bill-img'></image>
+        <text class='bill-ps'>{{item.ps}}</text>
+        <text class='bill-price'>{{item.price}}元</text>
+        <text class='bill-time'>{{item.time}}</text>
+      </wxc-flex>
+    </view>
+  </wxc-flex>
+  <view wx:if="{{showLoad}}">
+    <wxc-loadmore wx:if="{{hasMore}}" text="正在努力加载中..." icon="{{true}}"></wxc-loadmore>
+  <wxc-loadmore wx:if="{{!hasMore}}" text="到底啦" is-end="{{true}}"></wxc-loadmore>
+  </view>
+</view>

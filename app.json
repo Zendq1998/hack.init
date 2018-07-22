@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/group/newBill/index",
+    "page/group/newGroup/index",
+    "page/group/groupDetail/index",
+    "page/group/index",
+    "page/authorize/index"
+    
+  ],
+  "usingComponents": {},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小账本",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a8a8a8",
+    "selectedColor": "#5ec4f7",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "text": "我的账单",
+        "iconPath": "img/icon/my_bill.png",
+        "selectedIconPath": "img/icon/my_bill_l.png"
+      },
+      {
+        "pagePath": "page/group/index",
+        "text": "我的群",
+        "iconPath": "img/icon/my_group.png",
+        "selectedIconPath": "img/icon/my_group_l.png"
+      }
+    ]
+  }
+}
